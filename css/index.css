@@ -1,1 +1,260 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+/* ---------------------- MAIN Contents ---------------------------*/
+@font-face {
+  font-family: 'Lilita One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lilita One'), local('LilitaOne'), url(https://fonts.gstatic.com/s/lilitaone/v7/i7dPIFZ9Zz-WBtRtedDbYEF8QA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
+h1 {
+  font-size: 200%;
+  font-family: 'Ubuntu', sans-serif;
+}
+h2 {
+  font-size: 150%;
+}
+h3 {
+  font-size: 120%;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  width: 20%;
+}
+header nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: 'Lilita One', cursive;
+}
+.main-content-top {
+  padding: 2%;
+  margin-top: 2%;
+  background-color: #f5f0f0;
+}
+.main-content-top .profile-photo {
+  width: 50%;
+  display: block;
+  margin: 0 auto 2% auto;
+}
+.main-content-top h1,
+.main-content-top h4,
+.main-content-top p {
+  text-align: center;
+}
+.main-content-top button {
+  display: block;
+  margin: 2% auto;
+}
+.main-content-middle {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-content-middle div {
+  border: 2px dotted black;
+  width: 48%;
+  padding: 2%;
+  background-color: black;
+}
+.main-content-middle div p,
+.main-content-middle div h3,
+.main-content-middle div h2 {
+  color: white;
+  margin-top: 5%;
+}
+.main-content-middle ul li {
+  margin-left: 5%;
+  font-size: 100%;
+  padding: 1%;
+  list-style-type: square;
+  color: white;
+}
+@media (max-width: 500px) {
+  .main-content-middle {
+    flex-direction: column;
+  }
+  .main-content-middle div {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+.main-content-bottom {
+  margin-top: 1%;
+}
+.main-content-bottom table {
+  width: 100%;
+}
+.main-content-bottom table tr:nth-child(even) {
+  background-color: #f5f0f0;
+}
+.main-content-bottom table th {
+  padding: 1%;
+}
+footer {
+  margin: 2% 0 2% 0;
+  padding: 2%;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+  }
+}
